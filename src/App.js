@@ -26,7 +26,9 @@ state={
   humidity:undefined,
   description:undefined,
   error:undefined,
-  feels:undefined
+  feels:undefined,
+  windSpeed:undefined,
+  pressure:undefined
 
 }
 
@@ -36,7 +38,7 @@ state={
 e.preventDefault();
 const city=e.target.elements.city.value;
 const country=e.target.elements.country.value;
-const response=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`)
+const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`)
 const data=await response.json();
 
 if(city&&country){
@@ -46,6 +48,8 @@ this.setState({temperature:data.main.temp})
 this.setState({feels:data.main.feels_like})
 this.setState({humidity:data.main.humidity})
 this.setState({description:data.weather[0].description})
+this.setState({windSpeed:data.wind.speed})
+this.setState({pressure:data.main.pressure})
 this.setState({error:""})
 }
 else{
@@ -55,6 +59,8 @@ this.setState({temperature:undefined})
 this.setState({feels:undefined})
 this.setState({humidity:undefined})
 this.setState({description:undefined})
+this.setState({windSpeed:undefined})
+this.setState({pressure:undefined})
 this.setState({error:"Please fill up the input fields!"})
 }
 }
@@ -88,7 +94,9 @@ temperature={this.state.temperature}
 feels={this.state.feels}
 humidity={this.state.humidity} 
 description={this.state.description}
+windSpeed={this.state.windSpeed}
 error={this.state.error}
+pressure={this.state.pressure}
 />
 
 </div>
