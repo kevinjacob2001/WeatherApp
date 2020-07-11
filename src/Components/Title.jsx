@@ -7,9 +7,9 @@ class Title extends Component{
         return(
             <div >
 
-<h7 className="title-container__title " style={{color:"white"}}>Weather Finder</h7>
+<h7 className="title-container__title " style={{color:"white"}}>KevJac</h7>
 
-<p className="title-container__subtitle" style={{color:"white"}}>Find out the temperature,other climatic conditions.</p>
+<p className="title-container__subtitle" style={{color:"white"}}>KevJac provides you with latest Temperature ,Humidity & real time rain, storm &snow reports.</p>
 
 <p style={{color:"white",marginTop:"80px"}}>Developed by <h3>Kevin Jacob</h3> ,Connect me via</p>
 <SocialIcon url="http://github.com/kevinjacob2001" bgColor="#9400D3" fgColor="#ffffff"/>

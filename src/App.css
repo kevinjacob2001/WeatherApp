@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-  background-image: linear-gradient(to right top, #002498, #10259b, #1b269e, #2327a0, #2a28a3, #4530a2, #5739a1, #6642a0, #7d579d, #8d6d9b, #98849c, #9e9c9e);
+  background-image: linear-gradient(to right top, #1c049c, #081d9c, #002b9b, #003598, #0b3e94, #113f91, #173f8d, #1b408a, #163987, #133284, #112a80, #11227c);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -41,7 +41,8 @@ body {
   font-weight: 100;
   letter-spacing: 1px;
   line-height: 1.5;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 17px;
+  font-family: 'Grenze Gotisch';
 }
 
 .form-container {
@@ -86,7 +87,7 @@ button {
   letter-spacing: 1px;
   font-size: 15px;
   cursor: pointer;
-  background-color: #f16051;
+  background-color: #c55549;
   color: #fff;
   font-weight: 100;
 }
@@ -104,9 +105,9 @@ button:active {
 }
 
 .weather__key {
-  color: #f16051;
+  color: #c4a9a6;
   border-bottom: solid 2px rgba(255,255,255,0.06);
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
   font-weight: 400;
 }
 

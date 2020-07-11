@@ -14,14 +14,14 @@ function Weather(props){
     
 
       {props.temperature&&( <p className="weather__key" >Current temperature:
-        <span>{" "} {props.temperature}{"°C"}</span>
+        <span>{" "} {props.temperature}{"°C"} but feels like {props.feels}{"°C"}</span>
           </p>)}
      
        {props.humidity&&( <p className="weather__key">Humidity: 
         <span>{" "}{props.humidity}{"%"}</span>
            </p>)}
 
-       {props.description&&( <p className="weather__key">Description:
+       {props.description&&( <p className="weather__key">Current weather:
            
         <span>{" "}{props.description}</span>
                
