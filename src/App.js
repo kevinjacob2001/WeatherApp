@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 
+import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Title from './Components/Title';
 import Form from './Components/Form';
 import Weather from './Components/Weather';
+import Header from './Components/Header';
 
 const API_KEY="ba83f1e9b9127f1c19738fc56ba4aa3e";
 
@@ -52,7 +57,15 @@ this.setState({error:"please complete the input field"})
 
   return (
     <div>
+<div className="wrapper">
+  <div className="main">
+    <div className="container">
+      <div className="row">
+<div className="col-5 title-container">
 <Title/>
+</div>
+<div className="col-7 form-container">
+
 <Form getWeather={this.getWeather}/>
 <Weather 
 country={this.state.country} 
@@ -62,9 +75,23 @@ humidity={this.state.humidity}
 description={this.state.description}
 error={this.state.error}
 />
+
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     </div>
 
   );
 }
 }
+
+
+
+
+
 export default App;
