@@ -1,10 +1,9 @@
-
 body {
-  font-family: "Open Sans", serif;
+  font-family: 'Grenze Gotisch', cursive;
 }
 
 .wrapper {
-  background: linear-gradient(to right, #e67e22, #e74c3c);
+  background-image: linear-gradient(to right top, #002498, #10259b, #1b269e, #2327a0, #2a28a3, #4530a2, #5739a1, #6642a0, #7d579d, #8d6d9b, #98849c, #9e9c9e);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,7 +20,7 @@ body {
 
 .title-container {
   height: 90vh;
-  background: url("greece.jpg") center center no-repeat;
+  background: url("aurora.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -34,7 +33,7 @@ body {
   font-size: 50px;
   letter-spacing: 2px;
   line-height: 1.3;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Grenze Gotisch', cursive;
 }
 
 .title-container__subtitle {
@@ -42,13 +41,13 @@ body {
   font-weight: 100;
   letter-spacing: 1px;
   line-height: 1.5;
-  font-family: "Merriweather", serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .form-container {
   background-color: #2c3e50;
   height: 90vh;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 50px;
 }
 
@@ -56,13 +55,14 @@ input[type="text"] {
   background-color: transparent;
   border: 0;
   border-bottom: solid 1px #f16051;
-  width: 30%;
+  width: 90%;
+
   padding-bottom: 4px;
   color: #fff !important;
   font-weight: lighter;
   letter-spacing: 2px;
   margin-bottom: 30px;
-  margin-right: 20px;
+  margin-right: 80px;
   font-size: 20px;
 }
 
@@ -77,9 +77,11 @@ input:-webkit-autofill {
 
 button {
   border: 0;
+
   padding: 8px 20px;
   margin: 0 2px;
   border-radius: 2px;
+  font-family: 'Grenze Gotisch';
   font-weight: lighter;
   letter-spacing: 1px;
   font-size: 15px;
@@ -98,6 +100,7 @@ button:active {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 2px;
+
 }
 
 .weather__key {

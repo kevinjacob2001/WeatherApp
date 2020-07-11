@@ -4,13 +4,31 @@ import React from 'react';
 function Weather(props){
         return(
             <div>
-                {props.country&&(<h1 >Country code: {props.country}</h1>)}
+                {props.country&&props.city&&(<h6 className="weather__key" >Location: 
+                    
+                  <span>{props.city},{props.country}</span>
+                    
+                    </h6>)}
+                
 
-       {props.city&&(<h1>City {props.city}</h1>)}
-      {props.temperature&&( <h1>Temperature {props.temperature}</h1>)}
-       {props.humidity&&( <h1>Humidity {props.humidity}</h1>)}
-       {props.description&&( <h2>Description:{props.description}</h2>)}
-        {props.error&&(<h2>{props.error}</h2>)}
+    
+
+      {props.temperature&&( <p className="weather__key" >Current temperature:
+        <span>{" "} {props.temperature}{"°C"}</span>
+          </p>)}
+     
+       {props.humidity&&( <p className="weather__key">Humidity: 
+        <span>{" "}{props.humidity}{"%"}</span>
+           </p>)}
+
+       {props.description&&( <p className="weather__key">Description:
+           
+        <span>{" "}{props.description}</span>
+               
+               </p>)}
+       
+       
+        {props.error&&(<h2 className="weather__error">{props.error}</h2>)}
             </div>
         )
     }

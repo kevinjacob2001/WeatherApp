@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import ReactDOM from 'react-dom';
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Title from './Components/Title';
 import Form from './Components/Form';
 import Weather from './Components/Weather';
-import Header from './Components/Header';
+
+
+
 
 const API_KEY="ba83f1e9b9127f1c19738fc56ba4aa3e";
 
@@ -47,7 +52,7 @@ this.setState({country:undefined})
 this.setState({temperature:undefined})
 this.setState({humidity:undefined})
 this.setState({description:undefined})
-this.setState({error:"please complete the input field"})
+this.setState({error:"Please fill up the input fields!"})
 }
 }
 
@@ -57,14 +62,20 @@ this.setState({error:"please complete the input field"})
 
   return (
     <div>
+ 
 <div className="wrapper">
   <div className="main">
     <div className="container">
       <div className="row">
-<div className="col-5 title-container">
+<div className="col-6 title-container">
 <Title/>
+
+
+
 </div>
-<div className="col-7 form-container">
+
+
+<div className="col-6 form-container">
 
 <Form getWeather={this.getWeather}/>
 <Weather 
